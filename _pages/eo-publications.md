@@ -28,7 +28,7 @@ Peer-Reviewed Journal Articles
 
 Peer-Reviewed Book Chapters
 ------
-* __Oh, E. J.,__ Qian, M., Cheung, K., and Mohr, D. C. (2020). Building health application recommender system using partially penalized regression. _it Statistical Modeling in Biomedical Research_, Springer, 105-123.
+* __Oh, E. J.,__ Qian, M., Cheung, K., and Mohr, D. C. (2020). Building health application recommender system using partially penalized regression. _Statistical Modeling in Biomedical Research_, Springer, 105-123.
 
 
  
