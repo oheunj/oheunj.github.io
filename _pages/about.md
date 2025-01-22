@@ -16,4 +16,6 @@ About
 ======
 I received a BA and an MA in Statistics from [Yonsei University](https://www.yonsei.ac.kr/en_sc/index.jsp), and a PhD in Biostatistics from [Columbia University](https://www.columbia.edu/). My dissertation, co-advised by Drs. Min Qian and Ken Cheung, focused on statistical methods for optimal treatment regimes in personalized medicine and mobile health. After completing my PhD, I worked as a Postdoctoral Researcher at the [University of Pennsylvania](https://www.upenn.edu/) under the supervision of Dr. Jinbo Chen. Upon finishing my postdoc, I joined the [Feinstein Institutes for Medical Research](https://feinstein.northwell.edu/) as an Assistant Professor.
 
+For collaboration
+------
 I would welcome the opportunity to discuss potential collaboration opportunities. Please feel free to reach out if our interests align.
