@@ -9,7 +9,7 @@ redirect_from:
 
 My primary research interest lies in the areas of personalized medicine, risk prediction, variable selection, machine learning, effect heterogeneity, and their applications in health sciences. I work on developing novel statistical methodologies and collaborate with other researchers to conduct applied research in the biomedical domain. During my doctoral training, I developed a penalized regression-based learning procedure to construct optimal personalized dynamic treatment regimes, which can be inferred from accrued patient information and intervention effects. Additionally, I have led several research projects, including risk stratification using tree-based machine learning models and leveraging two-phase data with penalized regressions.
 
-Regarding collaborative efforts, I have worked with researchers across various fields, including otolaryngology, oncology, and surgery, and co-authored multiple peer-reviewed publications. This commitment was recently recognized when I received the AWSM Collaboration Award, highlighting my contributions to advancing team science.
+Regarding collaborative efforts, I have worked with researchers across various fields, including oncology, surgery, and otolaryngology, and co-authored multiple peer-reviewed publications. This commitment was recently recognized when I received the AWSM Collaboration Award, highlighting my contributions to advancing team science.
 
 
 About
