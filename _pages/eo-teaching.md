@@ -12,7 +12,7 @@ redirect_from:
 
 Feinstein Institutes for Medical Research
 ------
-* Facilitator
+* Instructor
   * Statistical Methods for Medical Research (Upcoming) 03-04/2025
   * Applied Regression Models in R (Research Career Series) 09-10/2023
   * Introduction to Statistical Computing: R (Research Career Series) 01-02/2023
