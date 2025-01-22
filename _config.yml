@@ -12,7 +12,7 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Eun Jeong Oh"
 description              : &description "personal description"
-url                      : https://oheunj.github.io/
+url                      : https://oheunj.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
