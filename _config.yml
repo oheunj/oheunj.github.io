@@ -21,7 +21,7 @@ repository               : "oheunj/oneunj.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "image1.png"
+  avatar           : "image2.png"
   name             : "Eun Jeong Oh"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor / Faculty-Level Biostatistician"
