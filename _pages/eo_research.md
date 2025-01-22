@@ -8,8 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
+
   
-======
 * Research Item 1
 * Research Item 2
   * sub-item 2.1
