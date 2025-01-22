@@ -10,9 +10,9 @@ redirect_from:
 {% include base_path %}
   
 ======
-* Research Item 1
-* Research Item 2
+* Item 1
+* Item 2
   * sub-item 2.1
   * sub-item 2.2
   * sub-item 2.3
-* Research Item 3
+* Item 3
