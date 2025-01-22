@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: # "Teaching"
-permalink: /eo_teaching/
+permalink: /eo-teaching/
 author_profile: true
 redirect_from:
   - /resume
