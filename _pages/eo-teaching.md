@@ -10,13 +10,13 @@ redirect_from:
 {% include base_path %}
 
 
-#### Feinstein Institutes for Medical Research | Northwell Health
+### Feinstein Institutes for Medical Research | Northwell Health
 * Instructor
   * Statistical Methods for Medical Research (Upcoming) 03-04/2025
   * Applied Regression Models in R (Research Career Series) 09-10/2023
   * Introduction to Statistical Computing: R (Research Career Series) 01-02/2023
 
-#### Columbia University
+### Columbia University
 * Instructor
   * Introduction to SAS (BEST Diversity Program) Summer 2019
 * Teaching Assistant
@@ -27,7 +27,7 @@ redirect_from:
   * Statistical Computing with SAS (P6110, Master level) Fall 2015
   * Introduction to Biostatistical Methods (P6104, Master level) Summer 2015
  
-#### Yonsei University
+### Yonsei University
 * Teaching Assistant
   * Statistical Data analysis (STA4109) Spring 2012-2013
   * Multivariate Analysis (STA3102) Fall 2012-2013
