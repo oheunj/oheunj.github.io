@@ -6,10 +6,10 @@
 
 main:
   - title: "Research"
-    url: /research_eo/
+    url: /eo_research/
     
   - title: "Publications"
-    url: /publications_eo/
+    url: /eo_publications/
 
   - title: "Teaching"
-    url: /teaching_eo/
+    url: /eo_teaching/
