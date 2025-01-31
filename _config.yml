@@ -8,7 +8,7 @@ n# Welcome to Jekyll!
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Eun Jeong Oh / Home"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Eun Jeong Oh"
 description              : &description "personal description"
