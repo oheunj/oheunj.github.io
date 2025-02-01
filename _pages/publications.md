@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: # "Publications"
-permalink: /eo-publications/
+permalink: /publications/
 author_profile: true
 redirect_from:
   - /resume
