@@ -13,7 +13,7 @@ redirect_from:
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
 
 <div style="text-align: center;">
-  <img src="eoeSq.png" style="width: 60%;">
+  <img src="eoeSq.png" style="width: 40%;">
 </div>
 
 <!--
