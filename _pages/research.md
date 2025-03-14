@@ -13,7 +13,7 @@ redirect_from:
 
 <div style="text-align: center;">
   <img src="/images/myfig1.png" style="width: 50%;">
-  <img src="/images/myfig1-2.png" style="width: 50%;">
+  <img src="/images/myfig1-2.png" style="width: 60%;">
 </div>
 
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
@@ -39,7 +39,6 @@ Another key area of my research is risk prediction in oncology, which plays a cr
 
 <div style="text-align: center;">
   <img src="/images/myfig3.png" style="width: 50%;">
-  <img src="/images/myfig3-2.png" style="width: 50%;">
 </div>
 
 Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
