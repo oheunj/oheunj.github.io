@@ -22,7 +22,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 
 
 <div style="text-align: center;">
-  <img src="/images/myfig2.png" style="width: 50%;">
+  <img src="/images/myfig2.png" style="width: 60%;">
 </div>
 
 Another key area of my research is risk prediction in oncology, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those with terminal illness.
