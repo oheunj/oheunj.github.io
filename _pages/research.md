@@ -13,6 +13,7 @@ redirect_from:
 
 <div style="text-align: center;">
   <img src="/images/myfig1.png" style="width: 50%;">
+  <img src="/images/myfig1-2.png" style="width: 50%;">
 </div>
 
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
@@ -24,7 +25,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig2.png" style="width: 60%;">
+  <img src="/images/myfig2.png" style="width: 70%;">
 </div>
 
 Another key area of my research is risk prediction in oncology, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those with terminal illness.
@@ -38,7 +39,8 @@ Another key area of my research is risk prediction in oncology, which plays a cr
 
 Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
 
-* Overdevest, J., Irace, A. L., Mazzanti, V., __Oh, E. J.,__ Joseph, P. V., Devanand, D. P., Bitan, Z. C., Hod, E. A., Gudis, D. A., and Chiuzan, C. (2022). Chemosensory deficits are best predictor of serologic response among individuals infected with SARS-CoV-2. _PLoS ONE_, 17(12), e0274611.
-* Gartrell, R. D., Enzler, T., Kim, P. S., Fullerton, B. T., Fazlollahi, L., Chen, A. X., Minns, H. E., Perni, S., Weisberg, S. P., Rizk, E. M., Wang, S., __Oh, E. J.,__ Guo, X. V., Chiuzan, C., and, Saenger, Y. M. (2022). Neoadjuvant chemoradiation alters the immune microenvironment in pancreatic ductal adenocarcinoma. _OncoImmunology_, 11(1), 2066767.
+
 * Zhu, D., Wong, A., __Oh, E. J.,__ Ahn, S., Wotman, M., Sahai, T., Bottalico, D., Frank, D., and Tham, T. (2022). Impact of treatment parameters on racial survival differences in oropharyngeal cancer: national cancer database study. _Otolaryngology--Head & Neck Surgery_, 166(6), 1134-1143.
+* Gartrell, R. D., Enzler, T., Kim, P. S., Fullerton, B. T., Fazlollahi, L., Chen, A. X., Minns, H. E., Perni, S., Weisberg, S. P., Rizk, E. M., Wang, S., __Oh, E. J.,__ Guo, X. V., Chiuzan, C., and, Saenger, Y. M. (2022). Neoadjuvant chemoradiation alters the immune microenvironment in pancreatic ductal adenocarcinoma. _OncoImmunology_, 11(1), 2066767.
+* Overdevest, J., Irace, A. L., Mazzanti, V., __Oh, E. J.,__ Joseph, P. V., Devanand, D. P., Bitan, Z. C., Hod, E. A., Gudis, D. A., and Chiuzan, C. (2022). Chemosensory deficits are best predictor of serologic response among individuals infected with SARS-CoV-2. _PLoS ONE_, 17(12), e0274611.
 * Toyoda, Y., __Oh, E. J.,__ Premaratne, I. D., Chiuzan, C., and Rohde, C. H. (2020). Affordable care act state-specific medicaid expansion: impact on health insurance coverage and breast cancer screening rate. _Journal of the American College of Surgeons_, 230(5), 775-783.
