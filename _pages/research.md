@@ -21,6 +21,19 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 * __Oh, E. J.,__ Qian, M., Cheung, K., and Mohr, D. C. (2020). Building health application recommender system using partially penalized regression. _Statistical Modeling in Biomedical Research_, Springer, 105-123.
 
 
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="myfig2.png" style="width:50%">
+  </div>
+  <div class="column">
+    <img src="myfig3.png" style="width:50%">
+  </div>
+</div>
+
+
 Another key area of my research is risk prediction in oncology, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those with terminal illness.
 
 * __Oh, E. J.,__ Alfano, C. M., Esteva, F. J., Baron, P. L., Xiong, W., Brooke, T. E., Chen, E. I., and  Chiuzan, C. (2025). Risk stratification using tree-based models for recurrence-free survival in breast cancer. _JCO Oncology Advances_, 2, e2400011. [[pdf]](https://ascopubs.org/doi/pdfdirect/10.1200/OA.24.00011)
