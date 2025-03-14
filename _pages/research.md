@@ -16,6 +16,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
   <img src="eoeSq.png" style="width: 40%;">
 </div>
 
+
 <!--
 My work focuses on Dynamic Treatment Regimes (DTRs) to improve individualized care through data-driven treatment strategies. We have dervied generalization error bounds of the estimated DTR in the setting of finite number of stages with multiple treatment options, contributing to the theoretical advancements in the field. We have also developed an individualized recommender system for apps in the IntelliCare ecosystem, which is a suite of health apps for users with depression and anxiety disorders.
 -->
