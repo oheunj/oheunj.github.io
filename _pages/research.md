@@ -13,7 +13,7 @@ redirect_from:
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
 
 <div style="text-align: center;">
-  <img src="/images/eoeSq.png" style="width: 50%;">
+  <img src="/images/myfig1.png" style="width: 50%;">
 </div>
 
 * __Oh, E. J.,__ Qian, M., and Cheung, Y. K. (2022). Generalization error bounds of dynamic treatment regimes in penalized regression-based learning. _Annals of Statistics_, 50(4), 2047-2071. [[pdf]](https://par.nsf.gov/servlets/purl/10429985)
