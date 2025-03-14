@@ -26,10 +26,10 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 
 <div class="row">
   <div class="column">
-    <img src="myfig2.png" style="width:50%">
+    <img src="/images/myfig2.png" style="width:50%">
   </div>
   <div class="column">
-    <img src="myfig3.png" style="width:50%">
+    <img src="/images/myfig3.png" style="width:30%">
   </div>
 </div>
 
