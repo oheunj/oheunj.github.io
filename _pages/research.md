@@ -11,6 +11,9 @@ redirect_from:
 
 
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
+
+<img src="eoeSq.png">
+
 <!--
 My work focuses on Dynamic Treatment Regimes (DTRs) to improve individualized care through data-driven treatment strategies. We have dervied generalization error bounds of the estimated DTR in the setting of finite number of stages with multiple treatment options, contributing to the theoretical advancements in the field. We have also developed an individualized recommender system for apps in the IntelliCare ecosystem, which is a suite of health apps for users with depression and anxiety disorders.
 -->
