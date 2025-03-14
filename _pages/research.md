@@ -43,7 +43,6 @@ Another key area of my research is risk prediction in oncology, which plays a cr
 
 Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
 
-
 * Zhu, D., Wong, A., __Oh, E. J.,__ Ahn, S., Wotman, M., Sahai, T., Bottalico, D., Frank, D., and Tham, T. (2022). Impact of treatment parameters on racial survival differences in oropharyngeal cancer: national cancer database study. _Otolaryngology--Head & Neck Surgery_, 166(6), 1134-1143.
 * Gartrell, R. D., Enzler, T., Kim, P. S., Fullerton, B. T., Fazlollahi, L., Chen, A. X., Minns, H. E., Perni, S., Weisberg, S. P., Rizk, E. M., Wang, S., __Oh, E. J.,__ Guo, X. V., Chiuzan, C., and, Saenger, Y. M. (2022). Neoadjuvant chemoradiation alters the immune microenvironment in pancreatic ductal adenocarcinoma. _OncoImmunology_, 11(1), 2066767.
 * Overdevest, J., Irace, A. L., Mazzanti, V., __Oh, E. J.,__ Joseph, P. V., Devanand, D. P., Bitan, Z. C., Hod, E. A., Gudis, D. A., and Chiuzan, C. (2022). Chemosensory deficits are best predictor of serologic response among individuals infected with SARS-CoV-2. _PLoS ONE_, 17(12), e0274611.
