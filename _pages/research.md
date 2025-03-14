@@ -24,8 +24,8 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 
 
 <div style="text-align: center;">
-  <img src="/images/myfig2.png" style="width:50%; float: left;" />
-  <img src="/images/myfig3.png" style="width:30%; float: left;" />
+  <img src="/images/myfig2.png" style="width:45%; float: left; margin-right: 3cm;" />
+  <img src="/images/myfig3.png" style="width:22%; float: left;" />
 </div>
 
 <div style="clear: both;"></div>
