@@ -25,11 +25,13 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 <br><br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig2.png" style="width: 80%;">
+  <img src="/images/myfig2v2.png" style="width: 80%;">
 </div>
 
-Another key area of my research is risk prediction in oncology, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those who are terminally ill.
-
+Another key area of my research is risk prediction in oncology using machine learning (ML) algorithms, which plays a crucial role in improving patient outcomes and guiding clinical decisions. With the expansion of ML-based tools across the medical field for clinical guidance, we aim to address the following key questions: How can we more effectively account for heterogeneous effects in high-dimensional data, particularly in the context of rare diseases? How can we ensure proper model calibration to enhance the reliability of the model’s estimates? How can we develop accurate, yet clinically intuitive, ML models to inform risk-based follow-up care for time-to-event outcomes (e.g., cause-specific survival, relapse-free survival), which are subject to censoring?
+<!--
+We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those who are terminally ill.
+-->
 * __Oh, E. J.,__ Alfano, C. M., Esteva, F. J., Baron, P. L., Xiong, W., Brooke, T. E., Chen, E. I., and  Chiuzan, C. (2025). Risk stratification using tree-based models for recurrence-free survival in breast cancer. _JCO Oncology Advances_, 2, e2400011. [[pdf]](https://ascopubs.org/doi/pdfdirect/10.1200/OA.24.00011)
 * Ahn, S., __Oh, E. J.,__ Saleem, M., and Tham, T. (2024). Machine learning methods in classification of prolonged radiation therapy in oropharyngeal cancer: national cancer database. _Otolaryngology-Head and Neck Surgery_, 171(6), 1764-1772.
 * __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf)
