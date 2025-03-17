@@ -22,7 +22,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 * __Oh, E. J.,__ Qian, M., Cheung, K., and Mohr, D. C. (2020). Building health application recommender system using partially penalized regression. _Statistical Modeling in Biomedical Research_, Springer, 105-123.
 
 
-<br><br>
+<br>
 
 <div style="text-align: center;">
   <img src="/images/myfig2v2.png" style="width: 85%;">
@@ -37,7 +37,7 @@ We have addressed the challenge of patient heterogeneity in predicting short-ter
 * __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf)
 
 
-<br><br>
+<br>
 
 <div style="text-align: center;">
   <img src="/images/myfig3.png" style="width: 95%;">
