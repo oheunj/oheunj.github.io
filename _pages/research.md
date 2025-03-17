@@ -12,8 +12,8 @@ redirect_from:
 
 
 <div style="text-align: center;">
-  <img src="/images/myfig1.png" style="width: 50%;">
-  <img src="/images/myfig1-2.png" style="width: 60%;">
+  <img src="/images/myfig1.png" style="width: 45%;">
+  <img src="/images/myfig1-2.png" style="width: 55%;">
 </div>
 
 Personalized medicine typically takes one of two forms: (i) identifying subgroups of patients who benefit from a particular treatment, or (ii) determining the optimal treatment for an individual patient. My primary interest lies in the latter, the intersection of personalized medicine and reinforcement learning, where I focus on developing novel statistical methods to estimate optimal, adaptive interventions tailored to the uniquely evolving health status of each patient over time.
@@ -25,7 +25,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig2v2.png" style="width: 85%;">
+  <img src="/images/myfig2v2.png" style="width: 87%;">
 </div>
 
 Another key area of my research is risk prediction in oncology using machine learning (ML) algorithms, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We aim to address the following key questions: How can we more effectively account for heterogeneous effects in high-dimensional data, particularly in the context of rare diseases? How can we ensure proper model calibration to enhance the reliability of the model’s estimates? How can we develop accurate, yet clinically intuitive, ML models to inform risk-based follow-up care for time-to-event outcomes (e.g., cause-specific survival, relapse-free survival)?
@@ -40,7 +40,7 @@ We have addressed the challenge of patient heterogeneity in predicting short-ter
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig3.png" style="width: 95%;">
+  <img src="/images/myfig3.png" style="width: 100%;">
 </div>
 
 Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
