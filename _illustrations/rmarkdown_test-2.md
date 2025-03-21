@@ -1,8 +1,8 @@
 ---
-title: "R tutorial test 1"
+title: "R tutorial test 2"
 collection: illustrations
 type: "tutorial"
-permalink: /illustrations/rmarkdown_test-1
+permalink: /illustrations/rmarkdown_test-2
 location: "New York, NY"
 ---
 
