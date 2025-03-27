@@ -10,7 +10,5 @@ redirect_from:
 
 {% include base_path %}
 
-Under construction
-
-[[Exploring FY25 awarded grants at the NIH using ggplot2, wordcloud, and tm]](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250311)
+Exploring FY25 awarded grants at the NIH using ggplot2, wordcloud, and tm. [[R Markdown]](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250311)
 
