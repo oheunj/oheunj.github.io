@@ -1,0 +1,156 @@
+---
+title: "FY25 Awarded Grants"
+author: "Oh, Eun Jeong"
+date: "2025-03-11"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+collection: illustrations
+type: "tutorial"
+permalink: /illustrations/rmarkdown_test-0
+location: "New York, NY"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(wordcloud)
+library(tm)
+library(dplyr)
+library(tidytext)
+library(ggplot2)
+library(pander)
+
+data = read.csv("/Users/eunjeongoh/Downloads/SearchResult_Export_11Mar2025_124524.csv")
+
+df = data %>%
+  group_by(Administering.IC) %>%
+  rename(agency = Administering.IC) %>%
+  summarise(total.number = n(),
+            total.cost = sum(Total.Cost, na.rm = T)) %>%
+  mutate(total.cost.dollars = scales::label_number(accuracy=0.1, 
+                                           scale_cut=scales::cut_short_scale())(total.cost)) %>%
+  select(agency, total.number, total.cost, total.cost.dollars) %>%
+  arrange(desc(total.number))
+```
+
+
+
+# Total Cost of Funded Grants So Far in 2025
+
+```{r}
+ggplot(df) +
+  geom_bar(aes(y = reorder(agency, total.cost), x = total.cost), position = "stack", stat = "identity") +
+  ylab("Agency") + 
+  xlim(0, max(df$total.cost)*1.1) +
+  xlab("Total Costs of Funded Grants") +
+  geom_text(aes(y = reorder(agency, total.cost), x = total.cost, label = total.cost.dollars),
+            hjust = -0.2, col = "#0b6fa1") #490A3D
+```
+
+
+# Total Number of Funded Grants So Far in 2025
+
+```{r}
+ggplot(df) +
+  geom_bar(aes(y=reorder(agency, total.number), x=total.number), position="stack", stat="identity") +
+  ylab("Agency") + 
+  xlim(0, max(df$total.number)*1.1) +
+  xlab("Total Number of Funded Grants") +
+  geom_text(aes(y = reorder(agency, total.number), x = total.number, label = total.number),
+            hjust = -0.2, col = "#0b6fa1")
+```
+
+
+
+# Frequent Words in Project Titles of Awarded Grants in 2025
+
+```{r}
+title = data$Project.Title
+title = gsub("\\s*\\([^\\)]+\\)", "", title)
+title = gsub('[0-9]+', '', title)
+
+title_text = Corpus(VectorSource(title))
+title_text_clean = tm_map(title_text, removePunctuation)
+title_text_clean = tm_map(title_text_clean, content_transformer(tolower))
+title_text_clean = tm_map(title_text_clean, removeNumbers)
+title_text_clean = tm_map(title_text_clean, stripWhitespace)
+title_text_clean = tm_map(title_text_clean, removeWords, stopwords('english'))
+
+par(bg = "black")
+cp = brewer.pal(7, "YlOrRd")
+wordcloud(title_text_clean, scale = c(2, 1), min.freq = 150, colors = cp)#rainbow(30))
+```
+
+```{r, fig.height = 60, eval = F}
+title_df = data_frame(Text = title)
+
+freq_words = title_df %>%
+  unnest_tokens(output = word, input = Text)
+
+freq_words = freq_words %>%
+  anti_join(stop_words)
+
+freq_wordcounts = freq_words %>% count(word, sort = TRUE)
+
+freq_wordcounts %>% 
+  filter(n >= 50) %>% 
+  mutate(word = reorder(word, n)) %>% 
+  ggplot(aes(word, n)) + 
+  geom_col() +
+  coord_flip() +
+  labs(x = "Word \n", y = "\n Count ", title = "Frequent Words In Title \n") +
+  geom_text(aes(label = n), hjust = 1.2, colour = "white", fontface = "bold") +
+  theme(plot.title = element_text(hjust = 0.5), 
+        axis.title.x = element_text(face="bold", colour="darkblue", size = 12),
+        axis.title.y = element_text(face="bold", colour="darkblue", size = 12))
+```
+
+
+# Top 30 Frequent Words in 2025 by Agency
+
+```{r chunk name2, fig.height=6, echo=FALSE, include= T, results="asis"}
+K = length(df$agency)
+
+for(i in 1:K){
+  
+  pander::pandoc.header(df$agency[i], level = 2)
+  #cat(paste("\n\n #",df$agency[i],"\n\n"))
+  #pander::pandoc.header(paste0("### ", df$agency[i]), level = 3)
+  #cat(paste("### ", df$agency[i], "\n"))
+  #cat(paste0(df$agency[i], " below:"))
+  
+  findata = data %>%
+    filter(Administering.IC == df$agency[i])
+  
+  title = findata$Project.Title
+  title = gsub("\\s*\\([^\\)]+\\)", "", title)
+  title = gsub('[0-9]+', '', title)
+
+  title_df = data_frame(Text = title)
+
+  freq_words = title_df %>%
+    unnest_tokens(output = word, input = Text)
+  
+  freq_words = freq_words %>%
+    anti_join(stop_words)
+  
+  freq_wordcounts = freq_words %>% count(word, sort = TRUE)
+    
+  print(freq_wordcounts %>% 
+    head(., 30) %>%
+    mutate(word = reorder(word, n)) %>% 
+    ggplot(aes(word, n)) + 
+    geom_col() +
+    coord_flip() +
+    labs(x = "Word \n", y = "\n Count ", title = "Frequent Words In Title \n") +
+    geom_text(aes(label = n), hjust = 1.2, colour = "white", fontface = "bold") +
+    theme(plot.title = element_text(hjust = 0.5), 
+          axis.title.x = element_text(face="bold", colour="darkblue", size = 12),
+          axis.title.y = element_text(face="bold", colour="darkblue", size = 12)))
+  
+  cat("\n\n\n\n")
+  
+}
+```
