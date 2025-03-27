@@ -22,7 +22,7 @@ redirect_from:
 * __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf)
 * Toyoda, Y., __Oh, E. J.,__ Premaratne, I. D., Chiuzan, C., and Rohde, C. H. (2020). Affordable care act state-specific medicaid expansion: impact on health insurance coverage and breast cancer screening rate. _Journal of the American College of Surgeons_, 230(5), 775-783.
 * Wotman, M., __Oh, E. J.,__ Ahn, S., Kraus, D., Costantino, P., and Tham, T. (2019). HPV status in patients with nasopharyngeal carcinoma in the United States: a SEER database study. _American Journal of Otolaryngology_, 40(5), 705-710.
-* Petkova, E. P., Beedsay, J., __Oh, E. J.,__ Sehnert, E. M., Tsai, W.-Y., and Reilly, M. J. (2017). Long-term recovery from Hurricane Sandy: evidence from a survey in New York City. _Disaster Medicine and Public Health Preparedness_, 12(2), 172-175.
+* Petkova, E. P., Beedsay, J., __Oh, E. J.,__ Sehnert, E. M., Tsai, W.-Y., and Reilly, M. J. (2018). Long-term recovery from Hurricane Sandy: evidence from a survey in New York City. _Disaster Medicine and Public Health Preparedness_, 12(2), 172-175.
 * __Oh, E. J.,__ Lee, H. (2013). Dimension reduction and prediction for high-dimensional regression models using the graphical lasso. _Journal of the Korean Data Analysis Society_, 15(5), 2321-2332.
 
 
