@@ -10,7 +10,8 @@ redirect_from:
 
 {% include base_path %}
 
-* [Text mining and visualizations for frequent words in FY25 awarded grants by NIH](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250311)
+### R illustrations
 
-* <a href="https://oheunj.github.io/illustrations/FY25_AwardedGrants_250311" style="text-decoration: none;">Text mining and visualizations for frequent words in FY25 awarded grants by NIH</a>
+* Text mining and visualizations of frequent words in FY25 NIH-awarded grants. [R Markdown](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250311)
+
 
