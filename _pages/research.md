@@ -40,7 +40,7 @@ We have addressed the challenge of patient heterogeneity in predicting short-ter
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig3v2.png" style="width: 95%;">
+  <img src="/images/myfig3v3.png" style="width: 95%;">
 </div>
 
 Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
