@@ -25,7 +25,7 @@ Personalized medicine typically takes one of two forms: (i) identifying subgroup
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/myfig2v2.png" style="width: 87%;">
+  <img src="/images/myfig2v3.png" style="width: 87%;">
 </div>
 
 Another key area of my research is risk prediction in oncology using machine learning (ML) algorithms, which plays a crucial role in improving patient outcomes and guiding clinical decisions. We aim to address the following key questions: How can we more effectively account for heterogeneous effects in high-dimensional data, particularly in the context of rare diseases? How can we ensure proper model calibration to enhance the reliability of the model’s estimates when data for the target samples is limited? How can we develop accurate, yet clinically intuitive, ML models to inform risk-based follow-up care for time-to-event outcomes (e.g., cause-specific survival, relapse-free survival)?
