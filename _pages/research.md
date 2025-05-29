@@ -32,7 +32,7 @@ Another key area of my research is risk prediction in oncology using machine lea
 <!--
 We have addressed the challenge of patient heterogeneity in predicting short-term mortality risk among cancer patients through a two-stage modeling approach. Additionally, by developing tree-based risk stratification models for recurrence-free survival, we have identified breast cancer patients at very high risk, enabling targeted interventions, particularly for those who are terminally ill.
 -->
-* __Oh, E. J.,__ Ahn, S., Tham, T., and Qian, M. (2025+). Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer. [[preprint]](https://arxiv.org/pdf/2503.16732)
+* __Oh, E. J.,__ Ahn, S., Tham, T., and Qian, M. (2025+). Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer. _Biometrics_. Accepted. [[preprint]](https://arxiv.org/pdf/2503.16732)
 * __Oh, E. J.,__ Alfano, C. M., Esteva, F. J., Baron, P. L., Xiong, W., Brooke, T. E., Chen, E. I., and  Chiuzan, C. (2025). Risk stratification using tree-based models for recurrence-free survival in breast cancer. _JCO Oncology Advances_, 2, e2400011. [[pdf]](https://ascopubs.org/doi/pdfdirect/10.1200/OA.24.00011)
 * __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf)
 
