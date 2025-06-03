@@ -12,6 +12,8 @@ redirect_from:
 [Google Scholar](https://scholar.google.com/citations?user=zpclPhcAAAAJ&hl=en)
 
 ### Peer-Reviewed Journal Articles
+* Siembida, E. J., Greene, B., __Oh, E. J.,__ Wiseman, K. P., Basile, M., Vadhan, N. P., Diefenbach, M. A., and Alfano, C. M. (Under Revision). Tobacco and other substance co-use among adolescents and young adult tobacco users with cancer: prevalence and associations with nicotine dependence and depression. _Family Medicine and Community Health_.
+* Ahn, S., and __Oh, E. J.__ (Submitted). A network-guided partially penalized regression with application to proteomics data. [[preprint]](https://arxiv.org/pdf/2505.22986)
 * __Oh, E. J.,__ Ahn, S., Tham, T., and Qian, M. (2025+). Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer. _Biometrics_. Accepted. [[preprint]](https://arxiv.org/pdf/2503.16732)
 * __Oh, E. J.,__ Alfano, C. M., Esteva, F. J., Baron, P. L., Xiong, W., Brooke, T. E., Chen, E. I., and  Chiuzan, C. (2025). Risk stratification using tree-based models for recurrence-free survival in breast cancer. _JCO Oncology Advances_, 2, e2400011. [[pdf]](https://ascopubs.org/doi/pdfdirect/10.1200/OA.24.00011)
 * Ahn, S., __Oh, E. J.,__ Saleem, M., and Tham, T. (2024). Machine learning methods in classification of prolonged radiation therapy in oropharyngeal cancer: national cancer database. _Otolaryngology-Head and Neck Surgery_, 171(6), 1764-1772.
