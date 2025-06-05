@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Eun Jeong Oh"
 title_separator          : "-"
 name                     : &name "Eun Jeong Oh"
-description              : &description "personal description"
+description              : &description "Eun Jeong Oh is an Assistant Professor and Biostatistician"
 url                      : https://oheunj.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # "academicpages/academicpages.github.io"
