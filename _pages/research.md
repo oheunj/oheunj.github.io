@@ -34,7 +34,7 @@ We have addressed the challenge of patient heterogeneity in predicting short-ter
 -->
 * __Oh, E. J.,__ Ahn, S., Tham, T., and Qian, M. (2025). Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer. _Biometrics_, 81(2), ujaf080. [[link]](https://academic.oup.com/biometrics/article/doi/10.1093/biomtc/ujaf080/8174609?utm_source=authortollfreelink&utm_campaign=biometrics&utm_medium=email&guestAccessKey=3eeab5b5-3196-45c2-a2dc-26cd057f53c8) [[pdf]](https://oheunj.github.io/files/ujaf080.pdf) [[supp]](https://oheunj.github.io/files/BIOM_SuppMaterials_TwoPhaseSurv.pdf)
 * __Oh, E. J.,__ Alfano, C. M., Esteva, F. J., Baron, P. L., Xiong, W., Brooke, T. E., Chen, E. I., and  Chiuzan, C. (2025). Risk stratification using tree-based models for recurrence-free survival in breast cancer. _JCO Oncology Advances_, 2, e2400011. [[pdf]](https://ascopubs.org/doi/pdfdirect/10.1200/OA.24.00011)
-* __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf) [[supp]](https://ascopubs.org/action/downloadSupplement?doi=10.1200%2FCCI.21.00077&file=DS_CCI.21.00077.pdf)
+* __Oh, E. J.,__ Parikh, R. B., Chivers, C., and Chen, J. (2021). Two-stage approaches to accounting for patient heterogeneity in machine learning risk prediction models in oncology. _JCO Clinical Cancer Informatics_, 5, 1015-1023. [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC8812620/pdf/cci-5-cci.21.00077.pdf)
 
 
 <br>
