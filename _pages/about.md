@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-# Eun Jeong Oh
+
 
 ## Research
 My primary research interest lies in the areas of personalized medicine, risk prediction, effect heterogeneity, variable selection, machine learning, and their applications in health sciences. I am dedicated to developing new statistical methodologies and collaborating with other investigators to conduct applied research in biomedical domains. I have developed a penalized regression-based learning procedure to construct optimal personalized dynamic treatment regimes, which can be inferred from accrued patient information and intervention effects. Additionally, I have led several research projects, including risk stratification using tree-based machine learning models and two-stage modeling to address patient heterogeneity.
