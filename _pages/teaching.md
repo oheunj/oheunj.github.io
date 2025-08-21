@@ -7,14 +7,15 @@ redirect_from:
   - /resume
 ---
 
+
 {% include base_path %}
 
 
 ### Feinstein Institutes for Medical Research | Northwell Health
 * Instructor
-  * Statistical Methods for Medical Research (Research Career Series) Mar-Apr 2025
-  * Applied Regression Models in R (Research Career Series) Sept-Oct 2023
-  * Introduction to Statistical Computing: R (Research Career Series) Jan-Feb 2023
+  * Statistical Methods for Medical Research 03-04/2025
+  * Applied Regression Models in R (Research Career Series) 09-10/2023
+  * Introduction to Statistical Computing: R (Research Career Series) 01-02/2023
 
 ### Columbia University
 * Instructor
