@@ -21,7 +21,7 @@ repository               : # "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "image3.jpg"
+  avatar           : "image4.jpg"
   name             : "Eun Jeong Oh"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor | Faculty-Level Biostatistician"
