@@ -13,7 +13,7 @@ redirect_from:
 
 ### Peer-Reviewed Journal Articles
 
-* Liu, A. W., __Oh, E. J.,__ Gazzara, E. R., Coppa, G. F., DePeralta, D. K., Molmenti, C. L., Devoe, C. E., Hornstein, N. J., Grothey, A., Levy, A., Weiss, M. J., Chiuzan, C., and Gholami, S. (Under Review). Identifying Treatment Disparities in Curative-intent Liver Procedure Rates for Metastatic Colorectal Cancer in a Large Regional Healthcare System.
+* Liu, A. W., __Oh, E. J.,__ Gazzara, E. R., Coppa, G. F., DePeralta, D. K., Molmenti, C. L., Devoe, C. E., Hornstein, N. J., Grothey, A., Levy, A., Weiss, M. J., Chiuzan, C., and Gholami, S. (Under Review). Identifying treatment disparities in curative-intent liver procedure rates for metastatic colorectal cancer in a large regional healthcare system.
 * Vrany, E. A., Chiuzan, C., __Oh, E. J.,__ Ephraim, P. L., Austin, R. A., Brissette, I. F., Millstein, S. L., and Fitzpatrick, S. L. (Under Review). Geographic analysis of access to national diabetes prevention program in New York State. 
 * __Oh, E. J.,__ and Qian, M. (Under Review). Reluctant transfer learning in penalized regressions for individualized treatment rules under effect heterogeneity. [[preprint]](https://arxiv.org/pdf/2511.08559)
 * Cohn, E., Karlson, E., Joffe, H., Choi, K., Federer, J., Tepp, R., McNally, S., Pourkey, N., Ziogas, A., Anton-Culver, H., Zhou, Z., Chuizan, C., __Oh, E. J.,__ Fang, J., and Jones, S. S. (Under Revision). Advancing women’s health research within the All of Us Research Program.
