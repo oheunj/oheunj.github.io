@@ -14,5 +14,5 @@ redirect_from:
 
 * Text mining and visualizations of frequent words in FY25 NIH-awarded grants. [[R Markdown]](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250401)
 * Manuscript-ready prevalence rate plots. [[R Markdown]](https://oheunj.github.io/illustrations/Prevalence_manual_250725)
-* New York State hospital emergency department spatio-temporal data exploratory plots. [[R Markdown]]()
+* County-level exploratory spatio-temporal plots of New York State hospital emergency department data. [[R Markdown]](https://oheunj.github.io/illustrations/NYS_ED_260309.html)
 
