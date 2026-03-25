@@ -1531,20 +1531,23 @@ dat = pubs %&gt;%
   relocate(cites, .after = number) %&gt;%
   rename(Author = author, Title = title, Year = year, 
          Journal = journal, Number = number,
-         `# of Cites` = cites) 
-
-dat %&gt;%
+         `# of Cites` = cites) </code></pre>
+<div id="list-of-publications" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> List of
+publications</h2>
+<pre class="r"><code>dat %&gt;%
   kable(format = &quot;html&quot;) %&gt;%
   kable_styling(
     bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;, &quot;responsive&quot;),
     font_size = 12)</code></pre>
 </div>
+</div>
 <div id="exploratory-analyses" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Exploratory
 Analyses</h1>
-<div id="a-quick-application-of-text-mining" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> A quick application
-of text mining</h2>
+<div id="text-mining-application" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Text mining
+application</h2>
 <pre class="r"><code>title = dat$Title
 title = gsub(&quot;\\s*\\([^\\)]+\\)&quot;, &quot;&quot;, title)
 title = gsub(&quot;[0-9]+&quot;, &quot;&quot;, title)
@@ -1560,9 +1563,9 @@ par(bg = &quot;black&quot;)
 cp = brewer.pal(7, &quot;YlOrRd&quot;)
 wordcloud(title_text_clean, scale = c(2, 1), min.freq = 15, colors = cp)</code></pre>
 </div>
-<div id="a-trajectory-of-citations" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> A trajectory of
-citations</h2>
+<div id="citations-over-time" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Citations over
+time</h2>
 <pre class="r"><code>current_year = as.integer(format(Sys.Date(), &quot;%Y&quot;))
 
 safe_cite_fetch = purrr::safely(function(article_id){
@@ -1620,9 +1623,9 @@ ggplot(cites_plot_data, aes(
   theme_bw() +
   theme(panel.border = element_rect(color = &quot;black&quot;, fill = NA, size = 1))</code></pre>
 </div>
-<div id="a-trajectory-of-h-index" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> A trajectory of
-h-index</h2>
+<div id="h-index-over-time" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> h-index over
+time</h2>
 <pre class="r"><code>citations = get_citation_history(id)
 
 ggplot(citations, aes(
@@ -1632,15 +1635,15 @@ ggplot(citations, aes(
   geom_line(color = &quot;blue&quot;, size = 1.2) +
   geom_point(color = &quot;red&quot;) +
   labs(
-    title = &quot;The h-index Over Time&quot;,
+    title = &quot;h-index Over Time&quot;,
     x = &quot;Year&quot;,
     y = &quot;h-index&quot;
   ) +
   theme_minimal()</code></pre>
 </div>
-<div id="prediction-of-future-h-index" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Prediction of future
-h-index</h2>
+<div id="future-h-index-prediction" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Future h-index
+prediction</h2>
 <pre class="r"><code>predict_h_index(id)</code></pre>
 </div>
 </div>
