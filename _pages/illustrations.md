@@ -12,8 +12,9 @@ redirect_from:
 
 ### R illustrations
 
-* Text mining and visualizations of frequent words in FY25 NIH-awarded grants. [[R Markdown]](https://oheunj.github.io/illustrations/FY25_AwardedGrants_250401)
-* Manuscript-ready prevalence rate plots. [[R Markdown]](https://oheunj.github.io/illustrations/Prevalence_manual_250725)
+* Text mining and visualizations of frequent words in FY25 NIH-awarded grants. [[R Markdown]](https://oheunj.github.io/illustrations/01_FY25_AwardedGrants_250401)
+* Manuscript-ready prevalence rate plots. [[R Markdown]](https://oheunj.github.io/illustrations/02_Prevalence_manual_250725)
+* Analysis of Google Scholar data using R. [[R Markdown]](https://oheunj.github.io/illustrations/03_GoogleScholar_260325)
 
 <!-- * County-level exploratory spatio-temporal plots of New York State emergency department data. [[R Markdown]](https://oheunj.github.io/illustrations/NYS_ED_260309.html) -->
 
