@@ -43,7 +43,7 @@ We have addressed the challenge of patient heterogeneity in predicting short-ter
   <img src="/images/myfig3v2.png" style="width: 95%;">
 </div>
 
-Beyond oncology, I have collaborated with researchers in various fields, including otolaryngology, immunology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
+Beyond oncology, I have collaborated with researchers in various fields, including public health, immunology, otolaryngology, and surgery. Collaborative projects that I would like to highlight include, but not limited to, the following publications:
 
 * Siembida, E. J., Greene, B., __Oh, E. J.,__ Wiseman, K. P., Basile, M., Vadhan, N. P., and Diefenbach, M. A. (2025). Tobacco and other substance co-use among adolescents and young adult tobacco users with cancer: prevalence and associations with nicotine dependence and depression. _Family Medicine and Community Health_, 13, e003362.
 * Overdevest, J., Irace, A. L., Mazzanti, V., __Oh, E. J.,__ Joseph, P. V., Devanand, D. P., Bitan, Z. C., Hod, E. A., Gudis, D. A., and Chiuzan, C. (2022). Chemosensory deficits are best predictor of serologic response among individuals infected with SARS-CoV-2. _PLoS ONE_, 17(12), e0274611.
