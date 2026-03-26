@@ -11,6 +11,7 @@
 
 <meta name="author" content="Oh, Eun Jeong" />
 
+<meta name="date" content="2026-03-26" />
 
 <title>Analysis of Google Scholar data using R</title>
 
@@ -1487,6 +1488,7 @@ font-size: 0.95em;
 <h1 class="title toc-ignore">Analysis of Google Scholar data using
 R</h1>
 <h4 class="author">Oh, Eun Jeong</h4>
+<h4 class="date">2026-03-26</h4>
 
 </div>
 
@@ -1500,8 +1502,8 @@ margin: auto;
 <div id="google-scholar-data" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Google Scholar
 Data</h1>
-<p>The data were pulled from my Google Scholar profile at the end of
-March 2026.</p>
+<p>The data is pulled from my Google Scholar profile on the date
+specified above.</p>
 <p>For more information, please refer to the <code>scholar</code> R
 package. It allows users to extract citation data from Google Scholar,
 compare multiple scholars, and even predict future h-index values. See
@@ -1569,9 +1571,8 @@ time</h2>
 <pre class="r"><code>current_year = as.integer(format(Sys.Date(), &quot;%Y&quot;))
 
 safe_cite_fetch = purrr::safely(function(article_id){
-  Sys.sleep(runif(1, 2, 4))
-  get_article_cite_history(id, article_id)
-  }
+  Sys.sleep(3) # to prevent hitting API rate limits (e.g., HTTP 429 too many requests)
+  get_article_cite_history(id, article_id)}
 )
 all_cites = map_dfr(pubs$pubid, ~{safe_cite_fetch(.x)$result})
 
@@ -1626,7 +1627,8 @@ ggplot(cites_plot_data, aes(
 <div id="h-index-over-time" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> h-index over
 time</h2>
-<pre class="r"><code>citations = get_citation_history(id)
+<pre class="r"><code>Sys.sleep(3) # to prevent hitting API rate limits (e.g., HTTP 429 too many requests)
+citations = get_citation_history(id)
 
 ggplot(citations, aes(
   x = factor(year), 
