@@ -11,7 +11,7 @@
 
 <meta name="author" content="Oh, Eun Jeong" />
 
-<meta name="date" content="2026-03-26" />
+<meta name="date" content="2026-03-27" />
 
 <title>Analysis of Google Scholar data using R</title>
 
@@ -1488,7 +1488,7 @@ font-size: 0.95em;
 <h1 class="title toc-ignore">Analysis of Google Scholar data using
 R</h1>
 <h4 class="author">Oh, Eun Jeong</h4>
-<h4 class="date">2026-03-26</h4>
+<h4 class="date">2026-03-27</h4>
 
 </div>
 
@@ -1621,32 +1621,50 @@ ggplot(cites_plot_data, aes(
     y = &quot;Cumulative Citations&quot;,
     color = &quot;Paper&quot;
   ) +
-  theme_bw() +
-  theme(panel.border = element_rect(color = &quot;black&quot;, fill = NA, size = 1))</code></pre>
-</div>
-<div id="h-index-over-time" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> h-index over
-time</h2>
-<pre class="r"><code>Sys.sleep(3) # to prevent hitting API rate limits (e.g., HTTP 429 too many requests)
-citations = get_citation_history(id)
-
-ggplot(citations, aes(
-  x = factor(year), 
-  y = h_index)
-  ) +
-  geom_line(color = &quot;blue&quot;, size = 1.2) +
-  geom_point(color = &quot;red&quot;) +
-  labs(
-    title = &quot;h-index Over Time&quot;,
-    x = &quot;Year&quot;,
-    y = &quot;h-index&quot;
-  ) +
   theme_minimal()</code></pre>
+</div>
+<div id="historical-h-index" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Historical
+h-index</h2>
+<pre class="r"><code>compute_h_index = function(citations){
+  citations = sort(citations, decreasing = TRUE)
+  sum(citations &gt;= seq_along(citations))
+}
+
+h_index_over_time = all_cites_filled %&gt;%
+  group_by(year) %&gt;%
+  summarise(h_index = compute_h_index(cum_cites))
+
+print(h_index_over_time)</code></pre>
 </div>
 <div id="future-h-index-prediction" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Future h-index
 prediction</h2>
-<pre class="r"><code>predict_h_index(id)</code></pre>
+<pre class="r"><code>predicted_h_index = predict_h_index(id)
+
+print(predicted_h_index)</code></pre>
+</div>
+<div id="trajectory-of-historical-and-future-predicted-h-index" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Trajectory of
+historical and future predicted h-index</h2>
+<pre class="r"><code>predicted = predicted_h_index %&gt;%
+  mutate(year = max(h_index_over_time$year) + years_ahead)
+
+current_year = max(h_index_over_time$year)
+
+ggplot() +
+  geom_step(data = h_index_over_time, aes(x = year, y = h_index), direction = &quot;hv&quot;, size = 0.8) +
+  geom_line(data = predicted, aes(x = year, y = h_index), color = &quot;gray50&quot;, linetype = &quot;dotted&quot;, size = 0.8) +
+  geom_vline(xintercept = current_year, color = &quot;red&quot;, linetype = &quot;solid&quot;) +
+  scale_x_continuous(breaks = sort(unique(c(h_index_over_time$year, predicted$year)))) +
+  scale_y_continuous(breaks = seq(0, max(c(h_index_over_time$h_index, predicted$h_index)), by = 5)) +
+  labs(
+    title = &quot;Historical and Future Predicted h-index&quot;,
+    x = &quot;Year&quot;,
+    y = &quot;h-index&quot;
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))</code></pre>
 </div>
 </div>
 
