@@ -23,7 +23,7 @@ redirect_from:
   * Introduction to SAS (BEST Diversity Program) Summer 2019
 * Teaching Assistant
   * Machine Learning Boot Camp (SHARP Training Program) Summer 2020
-  * Topics in Statistical Learning & Data Mining (P9120, PhD level) Fall 2019
+  * Topics in Statistical Learning & Data Mining (P9120, Doctoral level) Fall 2019
   * Linear Regression Models (P8111, Master level) Spring 2016-2017
   * Design of Medical Experiments (P8116, Master level) Spring 2016
   * Statistical Computing with SAS (P6110, Master level) Fall 2015
