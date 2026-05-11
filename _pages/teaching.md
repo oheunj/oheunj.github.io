@@ -15,7 +15,6 @@ redirect_from:
 ### Feinstein Institutes for Medical Research | Northwell Health
 * Co-Instructor
   * Statistical Methods for Medical Research 2025-2026 (3 offerings) <!-- 03-04/2025 & 09-10/2025 & 04-06/2026 -->
-* Lead Instructor
   * Applied Regression Models in R (Research Career Series) 09-10/2023
   * Introduction to Statistical Computing: R (Research Career Series) 01-02/2023
   
