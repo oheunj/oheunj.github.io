@@ -12,6 +12,7 @@ redirect_from:
 {% include base_path %}
 
 ### Feinstein Institutes for Medical Research | Northwell Health
+
 <table style="width:100%; border-collapse: collapse; border: none; table-layout: fixed;">
   <tr style="border: none;">
     <td colspan="2" style="border: none; padding: 10px 0 5px 0;"><strong>Co-Instructor</strong></td>
