@@ -12,6 +12,33 @@ redirect_from:
 {% include base_path %}
 
 ### Feinstein Institutes for Medical Research | Northwell Health
+
+- **Co-Instructor**
+  <ul>
+    <li>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+        <span>Statistical Methods for Medical Research</span>
+        <span>2025–2026 (3 offerings)</span>
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+        <span>Applied Regression Models in R</span>
+        <span>Sep–Oct 2023</span>
+      </div>
+    </li>
+
+    <li>
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+        <span>Introduction to Statistical Computing: R</span>
+        <span>Jan–Feb 2023</span>
+      </div>
+    </li>
+  </ul>
+  
+
+### Feinstein Institutes for Medical Research | Northwell Health
 * **Co-Instructor**
   * Statistical Methods for Medical Research <span style="float:right">2025–2026 (3 offerings)</span>
   * Applied Regression Models in R <span style="float:right">Sep–Oct 2023</span>
