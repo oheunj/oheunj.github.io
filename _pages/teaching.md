@@ -24,14 +24,14 @@ redirect_from:
 
     <li>
       <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
-        <span>Applied Regression Models in R</span>
+        <span>Applied Regression Models in R (Research Career Series)</span>
         <span>Sep–Oct 2023</span>
       </div>
     </li>
 
     <li>
       <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
-        <span>Introduction to Statistical Computing: R</span>
+        <span>Introduction to Statistical Computing: R (Research Career Series)</span>
         <span>Jan–Feb 2023</span>
       </div>
     </li>
