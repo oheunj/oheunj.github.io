@@ -12,7 +12,7 @@ redirect_from:
 
 ### Illustrations
 
-* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Markdown]](https://oheunj.github.io/illustrations/01_FY26_AwardedGrants_260523)  
+* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Markdown]](https://oheunj.github.io/illustrations/01_FY26_AwardedGrants_260523.Rmd)  
   Beyond simple word counts — keyword-level funding analysis, TF-IDF agency fingerprints,
   and strategic insights for NIH grant writers.  
   `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
