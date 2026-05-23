@@ -17,7 +17,7 @@ redirect_from:
   and strategic insights for NIH grant writers.  
   `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
   
-* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260522)  
+* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
 
