@@ -12,6 +12,11 @@ redirect_from:
 
 ### Illustrations
 
+* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Markdown]](https://oheunj.github.io/illustrations/01_FY26_AwardedGrants_260523)  
+  Beyond simple word counts — keyword-level funding analysis, TF-IDF agency fingerprints,
+  and strategic insights for NIH grant writers.  
+  `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
+  
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260522)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
@@ -20,12 +25,15 @@ redirect_from:
   Research profile analytics based on publication and citation data.  
   `R` · `scholar` · `ggplot2` · `dplyr`
 
-* **FY25 NIH-Awarded Grants Word Mining** [[R Markdown]](https://oheunj.github.io/illustrations/01_FY25_AwardedGrants_250401)  
-  Text mining and visualization of frequent words in NIH-funded project abstracts.  
-  `R` · `tidytext` · `ggplot2` · `dplyr`
+
+
+  
 
 
 <!--
+* **FY25 NIH-Awarded Grants Word Mining** [[R Markdown]](https://oheunj.github.io/illustrations/01_FY25_AwardedGrants_250401)  
+  Text mining and visualization of frequent words in NIH-funded project abstracts.  
+  `R` · `tidytext` · `ggplot2` · `dplyr`
 * NYS BRFSS county-level e-cigarette use map using R. [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260521)
 * Analysis of Google Scholar data using R. [[R Markdown]](https://oheunj.github.io/illustrations/03_GoogleScholar_260407)
 * Text mining and visualizations of frequent words in FY25 NIH-awarded grants. [[R Markdown]](https://oheunj.github.io/illustrations/01_FY25_AwardedGrants_250401)
