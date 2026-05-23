@@ -14,7 +14,7 @@ redirect_from:
 
 * **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Markdown]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
   Keyword-level funding patterns, TF-IDF agency fingerprints,
-  and insights for NIH grant writers.
+  and insights for NIH grant writers.   
   `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
   
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
