@@ -1,0 +1,532 @@
+---
+title: "FY26 NIH Awarded Grants: Funding Intelligence Report"
+author: "Oh, Eun Jeong"
+date: "2026-05-23"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+    number_sections: true
+    toc_depth: 3
+    mathjax: default
+runtime: shiny
+---
+
+<style type="text/css">
+div.main-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Insight boxes */
+.insight-box {
+  background: #eef4fb;
+  color: #1a1a2e;
+  border-left: 5px solid #0b6fa1;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin: 16px 0;
+  font-size: 0.96em;
+  line-height: 1.7;
+}
+
+.insight-box strong {
+  color: #0b6fa1;
+  font-size: 0.92em;
+}
+
+.insight-box ul {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+}
+
+/* Strategy tip boxes */
+.strategy-box {
+  background: #fff8e7;
+  border-left: 5px solid #f5a623;
+  border-radius: 6px;
+  padding: 14px 20px;
+  margin: 14px 0;
+  font-size: 0.95em;
+}
+
+.strategy-box .label {
+  font-weight: 700;
+  color: #c47d00;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* Section intro text */
+.section-intro {
+  color: #555;
+  font-size: 0.97em;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 12px;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.width = 11)
+```
+
+# Overview
+
+This page presents an R workflow for analyzing FY26 NIH-awarded grant data beyond simple word
+counts. The analyses include agency-level funding summaries, a keyword-funding bubble map,
+and TF-IDF-based agency fingerprints. The goal is to surface
+actionable insights for researchers navigating the NIH funding landscape.
+
+# Data Pre-processing
+
+The data includes all NIH-awarded grants in the United States for FY26 up to the date specified
+above.
+
+```{r load-packages}
+library(wordcloud)     # word cloud visualization
+library(tm)            # text mining and corpus preprocessing
+library(dplyr)         # data manipulation and summarisation
+library(tidytext)      # tidy text mining: tokenization, tf-idf, stop words
+library(ggplot2)       # static data visualization
+library(pander)        # markdown table rendering
+library(tidyr)         # data reshaping
+library(stringr)       # string manipulation
+library(plotly)        # interactive html charts
+library(ggrepel)       # non-overlapping text labels on scatter plots
+library(scales)        # axis label formatting (comma, percent, dollar)
+library(shiny)         # reactive selectInput + renderPlotly for TF-IDF section
+```
+
+```{r load-data}
+wd       = getwd()
+filename = paste0(wd, "/SearchResult_Export_23May2026_012709.csv")
+data     = read.csv(filename, skip = 7)
+
+# helper: strip parenthetical phrases and digits from project titles
+clean_title = function(x) {
+  x %>%
+    str_remove_all("\\s*\\([^\\)]+\\)") %>%
+    str_remove_all("[0-9]+")
+}
+
+# agency-level summary: grant counts, total and mean award
+df = data %>%
+  rename(agency = Administering.IC) %>%
+  group_by(agency) %>%
+  summarise(
+    total.number = n(),
+    total.cost   = sum(Total.Cost, na.rm = TRUE),
+    mean.cost    = mean(Total.Cost, na.rm = TRUE),
+    median.cost  = median(Total.Cost, na.rm = TRUE)
+  ) %>%
+  mutate(
+    total.cost.dollars = label_number(accuracy = 0.1,  scale_cut = cut_short_scale())(total.cost),
+    mean.cost.dollars  = label_number(accuracy = 0.01, scale_cut = cut_short_scale())(mean.cost)
+  ) %>%
+  arrange(desc(total.number))
+
+# token-level table: one row per (grant × word), retaining Total.Cost for later joins
+token_df = data %>%
+  rename(agency = Administering.IC) %>%
+  mutate(title_clean = clean_title(Project.Title)) %>%
+  unnest_tokens(word, title_clean) %>%
+  anti_join(stop_words, by = "word") %>%
+  filter(
+    str_length(word) > 2,            # drop very short tokens
+    !str_detect(word, "^[0-9]+$")    # drop numeric-only tokens
+  )
+```
+
+---
+
+# Agency Overview {.tabset}
+
+## Total Funding
+
+```{r plot-total-cost, fig.height=7}
+ggplot(df) +
+  geom_bar(
+    aes(y = reorder(agency, total.cost), x = total.cost),
+    stat = "identity", fill = "#16213e", width = 0.7
+  ) +
+  geom_text(
+    aes(y = reorder(agency, total.cost), x = total.cost, label = total.cost.dollars),
+    hjust = -0.2, colour = "#0b6fa1", size = 3.2
+  ) +
+  scale_x_continuous(
+    labels = label_number(scale_cut = cut_short_scale()),
+    expand = expansion(mult = c(0, 0.15))
+  ) +
+  labs(
+    title = "Total NIH Funding by Agency — FY26",
+    x     = "Total Cost (USD) \n",
+    y     = "\n Agency"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title   = element_text(face = "bold", colour = "darkblue", size = 14, hjust = 0.5),
+    axis.title.x = element_text(face = "bold", colour = "darkblue", size = 12, vjust = -1.5),
+    axis.title.y = element_text(face = "bold", colour = "darkblue", size = 12, vjust = 6),
+    axis.text.y  = element_text(size = 9),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank()
+  )
+```
+
+## Number of Grants
+
+```{r plot-n-grants, fig.height=7}
+ggplot(df) +
+  geom_bar(
+    aes(y = reorder(agency, total.number), x = total.number),
+    stat = "identity", fill = "#0f3460", width = 0.7
+  ) +
+  geom_text(
+    aes(y = reorder(agency, total.number), x = total.number, label = comma(total.number)),
+    hjust = -0.2, colour = "#0b6fa1", size = 3.2
+  ) +
+  scale_x_continuous(
+    labels = comma,
+    expand = expansion(mult = c(0, 0.15))
+  ) +
+  labs(
+    title = "Number of Funded Grants by Agency — FY26",
+    x     = "Number of Grants \n",
+    y     = "\n Agency"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title   = element_text(face = "bold", colour = "darkblue", size = 14, hjust = 0.5),
+    axis.title.x = element_text(face = "bold", colour = "darkblue", size = 12, vjust = -1.5),
+    axis.title.y = element_text(face = "bold", colour = "darkblue", size = 12, vjust = 6),
+    axis.text.y  = element_text(size = 9),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank()
+  )
+```
+
+## Average Award Size
+
+```{r plot-mean-award, fig.height=7}
+ggplot(df) +
+  geom_bar(
+    aes(y = reorder(agency, mean.cost), x = mean.cost),
+    stat = "identity", fill = "#533483", width = 0.7
+  ) +
+  geom_text(
+    aes(y = reorder(agency, mean.cost), x = mean.cost, label = mean.cost.dollars),
+    hjust = -0.2, colour = "#0b6fa1", size = 3.2
+  ) +
+  scale_x_continuous(
+    labels = label_number(scale_cut = cut_short_scale()),
+    expand = expansion(mult = c(0, 0.18))
+  ) +
+  labs(
+    title    = "Average Award Size by Agency — FY26",
+    subtitle = "Agencies with fewer but larger grants stand out here",
+    x        = "Mean Award (USD) \n",
+    y        = "\n Agency"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title    = element_text(face = "bold", colour = "darkblue", size = 14, hjust = 0.5),
+    plot.subtitle = element_text(size = 10, colour = "grey40", hjust = 0.5),
+    axis.title.x  = element_text(face = "bold", colour = "darkblue", size = 12, vjust = -1.5),
+    axis.title.y  = element_text(face = "bold", colour = "darkblue", size = 12, vjust = 6),
+    axis.text.y   = element_text(size = 9),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank()
+  )
+```
+
+---
+
+# Frequent Words in Project Titles
+
+```{r wordcloud, fig.height=4.5}
+# build a text corpus from cleaned project titles
+title_corpus = data$Project.Title %>%
+  clean_title() %>%
+  VectorSource() %>%
+  Corpus() %>%
+  tm_map(removePunctuation) %>%
+  tm_map(content_transformer(tolower)) %>%
+  tm_map(removeNumbers) %>%
+  tm_map(stripWhitespace) %>%
+  tm_map(removeWords, stopwords("english"))
+
+par(bg = "black")
+wordcloud(
+  title_corpus,
+  scale     = c(2, 1),
+  min.freq  = 150,
+  colors    = brewer.pal(7, "YlOrRd")
+)
+```
+
+---
+
+# Keywords × Funding: What Words Are Worth
+
+<div class="section-intro">
+Beyond word frequency, the critical question for grant writers is: <strong>which keywords appear
+in higher-funded projects?</strong> For each keyword appearing in ≥ 50 project titles, the
+analysis below computes (1) how many grants contain it and (2) the mean total award of those
+grants. Plotting these two dimensions together reveals the "golden keywords" — terms that are
+both common and associated with larger awards.
+</div>
+
+<div class="insight-box">
+<strong>KEY INSIGHT</strong><br>
+High-frequency keywords are not always high-value. Look for words in the
+<em>upper-right quadrant</em> of the bubble chart — those that are <em>both</em> common
+<em>and</em> linked to large awards. Bubble size adds a third dimension: the total NIH dollars
+tied to that keyword across all grants.
+</div>
+
+```{r keyword-funding, echo=FALSE, fig.height=7, fig.width=11}
+# compute per-keyword grant count and mean award
+keyword_stats = token_df %>%
+  group_by(word) %>%
+  summarise(
+    n_grants   = n_distinct(Application.ID),
+    mean_cost  = mean(Total.Cost, na.rm = TRUE),
+    total_cost = sum(Total.Cost,  na.rm = TRUE),
+    .groups    = "drop"
+  ) %>%
+  filter(n_grants >= 50) %>%
+  arrange(desc(mean_cost))
+
+# bubble chart: frequency × mean award, sized by total funding
+p_bubble = ggplot(
+  keyword_stats,
+  aes(x = n_grants, y = mean_cost, size = total_cost, label = word)
+) +
+  geom_point(aes(fill = mean_cost), shape = 21,
+             colour = "white", alpha = 0.82, stroke = 0.4) +
+  geom_text_repel(
+    data      = keyword_stats %>%
+      filter(
+        n_grants  > quantile(n_grants,  0.75) |
+        mean_cost > quantile(mean_cost, 0.75)
+      ),
+    aes(label = word),
+    size = 2.8, colour = "#1a1a2e", fontface = "bold",
+    box.padding = 0.4, max.overlaps = 25
+  ) +
+  scale_fill_gradient(
+    low    = "#90caf9",
+    high   = "#e94560",
+    labels = label_number(scale_cut = cut_short_scale())
+  ) +
+  scale_size_continuous(
+    range  = c(2, 14),
+    breaks = function(x) pretty(x, n = 4),
+    labels = label_number(accuracy = 0.1, scale_cut = cut_short_scale())
+  ) +
+  scale_x_continuous(labels = comma) +
+  scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
+  guides(
+    size = guide_legend(
+      override.aes = list(shape = 21, fill = "grey60", colour = "white", stroke = 0.4)
+    ),
+    fill = guide_colorbar()
+  ) +
+  labs(
+    title    = "Keyword Portfolio Map — FY26 NIH Grants",
+    subtitle = "X: grant count containing keyword  |  Y: mean award of those grants  |  Bubble size: total $ tied to keyword",
+    x        = "\n Number of Grants Containing Keyword",
+    y        = "Mean Award Size (USD) \n",
+    fill     = "Mean Award",
+    size     = "Total Funding"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title    = element_text(face = "bold", colour = "darkblue", size = 13, hjust = 0.5),
+    plot.subtitle = element_text(size = 9, colour = "grey40", hjust = 0.5),
+    axis.title.x  = element_text(face = "bold", colour = "darkblue", size = 11, vjust = -1.5),
+    axis.title.y  = element_text(face = "bold", colour = "darkblue", size = 11, vjust = 3),
+    legend.position = "right"
+  )
+
+p_bubble
+```
+
+```{r keyword-funding-table, echo=FALSE}
+# top 20 keywords ranked by mean award size
+keyword_stats %>%
+  arrange(desc(mean_cost)) %>%
+  head(20) %>%
+  mutate(
+    mean_cost  = label_number(accuracy = 0.01, scale_cut = cut_short_scale())(mean_cost),
+    total_cost = label_number(accuracy = 0.1,  scale_cut = cut_short_scale())(total_cost)
+  ) %>%
+  rename(
+    Keyword         = word,
+    `# Grants`      = n_grants,
+    `Mean Award`    = mean_cost,
+    `Total Funding` = total_cost
+  ) %>%
+  knitr::kable(caption = "Top 20 Keywords by Mean Award Size (minimum 50 grants)")
+```
+
+<div class="strategy-box">
+<div class="label">📌 Grant Writing Strategy</div>
+Keywords near the top of this table appear in titles of grants with the highest average awards.
+If your science genuinely involves these concepts, make them visible — in your title, specific
+aims, and abstract. NIH study sections recognize these as signals of ambitious, large-scope
+projects.
+</div>
+
+---
+
+# TF-IDF: What Makes Each IC Unique
+
+<div class="section-intro">
+Simple word frequency tells you what is common across all of NIH. <strong>TF-IDF</strong>
+(Term Frequency – Inverse Document Frequency) tells you what is <em>distinctively
+characteristic</em> of each agency. The score combines two components:
+
+$$\text{TF-IDF}(t,\, d) \;=\; \frac{\text{count of term } t \text{ in agency } d}{\text{total terms in agency } d} \;\times\; \log\!\left(\frac{\text{total number of agencies}}{\text{number of agencies containing } t}\right)$$
+
+- **TF (Term Frequency):** how often a word appears within a given agency's grant titles,
+  relative to all words that agency uses. A word used heavily by NIDA gets a high TF for NIDA.
+- **IDF (Inverse Document Frequency):** the log of the ratio of total agencies to the number
+  of agencies that use the word at all. Words that appear in nearly every IC — such as
+  *disease*, *clinical*, or *study* — receive an IDF close to zero, which collapses their
+  TF-IDF score regardless of local frequency. Words concentrated in only one or two agencies
+  receive a high IDF and therefore a high TF-IDF score.
+
+Multiplying TF × IDF rewards words that are both locally frequent *and* globally rare across
+ICs. In practice this surfaces the "fingerprint" vocabulary of each agency — terms like
+*addiction* for NIDA or *vision* for NEI. A proposal whose core terminology aligns with an
+IC's TF-IDF fingerprint signals to reviewers that the science belongs there.
+
+*Note: because each agency panel is scaled independently below, bar lengths reflect within-agency
+rank rather than absolute cross-agency comparisons. Agencies with large, diverse portfolios
+(e.g., NINDS, NHLBI) naturally produce lower absolute TF-IDF values because no single term
+dominates — this is expected, not a data quality issue. TF-IDF also measures cross-agency
+distinctiveness rather than a direct comparison against the NIH-wide average rate; for the
+latter, a weighted log-odds approach via the* `tidylo` *package would be more appropriate.*
+</div>
+
+<div class="insight-box">
+<strong>KEY INSIGHT</strong><br>
+If your proposal's core keywords have high TF-IDF in a specific agency, that IC is likely
+your best-fit home. A mismatch between your scientific vocabulary and the target IC's fingerprint
+is a signal to either reconsider the agency or reframe your proposal language.
+</div>
+
+```{r tfidf-compute, echo=FALSE}
+# compute TF-IDF treating each agency as a "document"
+agency_tfidf = token_df %>%
+  count(agency, word, sort = TRUE) %>%
+  bind_tf_idf(word, agency, n) %>%
+  arrange(agency, desc(tf_idf))
+```
+
+```{r tfidf-shiny, echo=FALSE}
+# all agencies ordered by grant count
+agencies_ordered = df %>%
+  arrange(desc(total.number)) %>%
+  pull(agency)
+
+# build per-agency top-12 data once
+tfidf_top12 = lapply(agencies_ordered, function(ag) {
+  agency_tfidf %>%
+    filter(agency == ag) %>%
+    slice_max(tf_idf, n = 12) %>%
+    arrange(tf_idf) %>%
+    mutate(agency_label = ag)
+}) %>% bind_rows()
+
+# native HTML select — scrollable, easy to use
+selectInput(
+  inputId  = "selected_agency",
+  label    = "Select Agency:",
+  choices  = agencies_ordered,
+  selected = agencies_ordered[1],
+  width    = "200px"
+)
+
+renderPlotly({
+  ag  = input$selected_agency
+  dat = tfidf_top12 %>% filter(agency_label == ag)
+
+  plot_ly(
+    dat,
+    x             = ~tf_idf,
+    y             = ~factor(word, levels = word),  # preserve sorted order
+    type          = "bar",
+    orientation   = "h",
+    marker        = list(color = "#0b6fa1"),
+    hovertemplate = "<b>%{y}</b><br>TF-IDF: %{x:.5f}<extra></extra>"
+  ) %>%
+    layout(
+      title = list(
+        text = paste0(ag, ": Top 12 Characteristic Keywords"),
+        font = list(size = 13, color = "darkblue")
+      ),
+      xaxis = list(
+        title     = "TF-IDF Score (higher = more distinctive to that agency)",
+        titlefont = list(size = 10)
+      ),
+      yaxis = list(
+        title      = "",
+        tickfont   = list(size = 10),
+        automargin = TRUE
+      ),
+      margin = list(l = 10, t = 50)
+    )
+})
+```
+
+<div class="strategy-box">
+<div class="label">📌 Grant Writing Strategy</div>
+Use this chart to verify your agency choice. Find the IC you are targeting and check whether
+your proposal's core concepts match its keyword fingerprint. If your key terms do not appear
+here, your agency selection may be off — or you have an opportunity to pioneer a new direction,
+but be prepared to justify it to reviewers.
+</div>
+
+---
+
+# Funding Intelligence Summary
+
+<div class="insight-box">
+<strong>TAKEAWAYS FOR GRANT WRITERS</strong>
+<ul>
+  <li><strong>Golden keywords</strong> (high frequency AND high mean award) are the most
+  strategic terms to incorporate authentically into your title and specific aims.</li>
+  <li><strong>TF-IDF fingerprints</strong> reveal each IC's scientific identity. Words with high
+  TF-IDF are rare across NIH but concentrated in one agency — matching your vocabulary to the
+  IC's fingerprint signals reviewer fit.</li>
+  <li>A mismatch between your scientific vocabulary and the target IC's TF-IDF profile is a
+  signal to either reconsider the agency or reframe your proposal language.</li>
+</ul>
+</div>
+
+# Contact
+
+Questions, suggestions, and collaboration inquiries are welcome. Please feel free to contact me
+if you are interested in adapting this workflow to other funding datasets or research settings.
+
+**Eun Jeong Oh, PhD**  
+Assistant Professor of Biostatistics, Research Intelligence  
+Northwell Health  
+GitHub: https://github.com/oheunj  
+Email: eoh2 [at] northwell [dot] edu
+
+**Code Availability**  
+The data access and preparation code is shown above for transparency. The code used to generate
+the figures and tables in this report is not displayed in the rendered page, but it is available
+upon request.
+
+---
+
+© 2026 Eun Jeong Oh. All rights reserved.
