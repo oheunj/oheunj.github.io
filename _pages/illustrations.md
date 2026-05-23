@@ -12,11 +12,11 @@ redirect_from:
 
 ### Illustrations
 
-* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260521)  
+* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260522)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
 
-* **Google Scholar Data Analysis** [[R Markdown]](https://oheunj.github.io/illustrations/03_GoogleScholar_260407)  
+* **Google Scholar Data Analysis** [[R Markdown]](https://oheunj.github.io/illustrations/03_GoogleScholar_260522)  
   Research profile analytics based on publication and citation data.  
   `R` · `scholar` · `ggplot2` · `dplyr`
 
