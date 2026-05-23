@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-### R Illustrations
+### Illustrations
 
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260521)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
