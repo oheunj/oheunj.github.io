@@ -12,15 +12,14 @@ redirect_from:
 
 ### Illustrations
 
-* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
-  Keyword-level funding patterns, TF-IDF agency fingerprints,
-  and insights for NIH grant writers.   
-  `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
-  
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
 
+* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
+  Keyword-level funding patterns, TF-IDF agency fingerprints,
+  and insights for NIH grant writers.   
+  `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
 
 
   
