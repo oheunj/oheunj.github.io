@@ -12,7 +12,7 @@ redirect_from:
 
 ### Illustrations
 
-* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Markdown]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
+* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
   Keyword-level funding patterns, TF-IDF agency fingerprints,
   and insights for NIH grant writers.   
   `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
