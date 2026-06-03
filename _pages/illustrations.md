@@ -13,7 +13,7 @@ redirect_from:
 ### Illustrations
 
 * **NIH Grant Activity Code Recommender** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/nih-grant-recommender)  
-  Content-based grant mechanism recommendation using NIH ExPORTER FY2025 data, recommending relevant activity codes (R01, R21, K23, etc.) from research keywords and career stage via multiclass XGBoost with text-based features.
+  Content-based grant mechanism recommendation using NIH ExPORTER FY2025 data, recommending relevant activity codes (R01, R21, K23, etc.) from research keywords and career stage via multiclass XGBoost with text-based features.  
   `R` · `xgboost` · `text2vec` · `Shiny`
 
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
