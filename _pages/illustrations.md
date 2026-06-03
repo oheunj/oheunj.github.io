@@ -14,22 +14,24 @@ redirect_from:
 
 * **NIH Grant Activity Code Recommender** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/nih-grant-recommender)  
   Content-based grant mechanism recommendation using NIH ExPORTER FY2025 data, recommending relevant activity codes (R01, R21, K23, etc.) from research keywords and career stage via multiclass XGBoost with text-based features. Not affiliated with or endorsed by NIH.  
-  `R` · `xgboost` · `text2vec` · `Matrix` · `Shiny` · `DT`
+  `R` · `xgboost` · `text2vec` · `Shiny`
 
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
 
-* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
-  Keyword-level funding patterns, TF-IDF agency fingerprints,
-  and insights for NIH grant writers.   
-  `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
 
 
   
 
 
 <!--
+* **FY26 NIH-Awarded Grants: Funding Intelligence Report** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/01_FY26_AwardedGrants_260523)  
+  Keyword-level funding patterns, TF-IDF agency fingerprints,
+  and insights for NIH grant writers.   
+  `R` · `tidytext` · `plotly` · `ggplot2` · `dplyr` · `Shiny`
+
+
 * **Google Scholar Data Analysis** [[R Markdown]](https://oheunj.github.io/illustrations/03_GoogleScholar_260522)  
   Research profile analytics based on publication and citation data.  
   `R` · `scholar` · `ggplot2` · `dplyr`
