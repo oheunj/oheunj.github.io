@@ -12,6 +12,10 @@ redirect_from:
 
 ### Illustrations
 
+* **NIH Grant Activity Code Recommender** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/nih-grant-recommender)  
+  Content-based grant mechanism recommendation using NIH ExPORTER data, which produces relevant activity codes (R01, R21, K23, etc.) from research keywords and career stage via multiclass XGBoost with TF-IDF text features.  
+  `R` · `xgboost` · `text2vec` · `Matrix` · `Shiny` · `DT`
+
 * **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260516)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
