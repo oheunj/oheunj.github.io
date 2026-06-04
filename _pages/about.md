@@ -26,10 +26,11 @@ I received a BA and an MA in Statistics from [Yonsei University](https://www.yon
 ### A fun fact about me
 I was born and raised in Seoul, South Korea 🇰🇷 and have lived in several cities around the world 🌍. These include Ann Arbor, MI 💛💙; Basel, Switzerland🇨🇭; and Poitiers, France 🇫🇷. Since 2014, I have been based in New York City 🗽, with a two-year stay in Philadelphia, PA 🏛️ in between. I have enjoyed connecting with local communities in each place, while also appreciating the vibrancy of larger cities like Seoul and NYC. As a coffee lover, I am always happy to chat over a cup of coffee ☕.
 
-<!--I have truly enjoyed connecting with local communities in the lovely cities of Ann Arbor, Basel, and Poitiers. At the same time, I have a deep appreciation for the vibrancy of larger cities like Seoul and NYC. Also, as a fellow coffee lover, I am always up for sipping coffee and having a good conversation along the caffeine journey. Just say when ☕! -->
+<!--I have truly enjoyed connecting with local communities in the lovely cities of Ann Arbor, Basel, and Poitiers. At the same time, I have a deep appreciation for the vibrancy of larger cities like Seoul and NYC. Also, as a fellow coffee lover, I am always up for sipping coffee and having a good conversation along the caffeine journey. Just say when ☕! 
 
 ### For collaboration
-I would welcome the opportunity to discuss potential collaboration opportunities. Please do not hesitate to reach out if you would like to discuss further. You can contact me at eoh2 [at] northwell [dot] edu. 
+I would welcome the opportunity to discuss potential collaboration opportunities. Please do not hesitate to reach out if you would like to discuss further. You can contact me at eoh2 [at] northwell [dot] edu. -->
+
 
 ## News
 
