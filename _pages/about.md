@@ -17,7 +17,7 @@ Regarding collaborative efforts, I have worked with researchers across various f
 
 My [research](https://oheunj.github.io/research/) interest lies in the areas of personalized medicine, risk prediction, effect heterogeneity, variable selection, machine learning, and their applications in health sciences. I am dedicated to developing new statistical methodologies and collaborating with other investigators to conduct applied research in biomedical domains. I have developed a penalized regression-based learning procedure to construct optimal personalized dynamic treatment regimes, which can be inferred from accrued patient information and intervention effects. Additionally, I have led several research projects, including risk stratification using tree-based machine learning models and two-stage modeling to address patient heterogeneity.
 
-Regarding collaborative efforts, I have worked with researchers across various fields, including oncology, surgery, immunology, and otolaryngology, and co-authored multiple peer-reviewed publications. This commitment was recently recognized through my receipt of the AWSM Collaboration Award, highlighting my contributions to advancing team science.
+Regarding collaborative efforts, I have worked with researchers across various fields, including oncology, surgery, immunology, and otolaryngology, and co-authored multiple peer-reviewed publications. This commitment was recognized through my receipt of the AWSM Collaboration Award, highlighting my contributions to advancing team science.
 
 
 ## About
@@ -30,3 +30,14 @@ I was born and raised in Seoul, South Korea 🇰🇷 and have lived in several c
 
 ### For collaboration
 I would welcome the opportunity to discuss potential collaboration opportunities. Please do not hesitate to reach out if you would like to discuss further. You can contact me at eoh2 [at] northwell [dot] edu. 
+
+## News
+
+- **[2026]** Received the AWSM Jack Weintraub Educational Advancement Award, Feinstein Institutes for Medical Research.
+- **[2026]** Serving as Subaward PI on NIH NHLBI R01HL182015 (Cardiovascular Risk Prediction and Reduction in Men with Prostate Cancer).
+- **[2026]** Upcoming contributed talk at the 33rd International Biometric Conference (IBC), Seoul, South Korea (07/2026).
+- **[2026]** Upcoming contributed session chair at Joint Statistical Meetings (JSM) (08/2026).
+- **[2025]** Received the AWSM Career Development Award in Memory of Roman Nosikovsky, Feinstein Institutes for Medical Research.
+- **[2025]** New paper published: “Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer.” *Biometrics*, 81(2).
+- **[2025]** New paper published: “Risk stratification using tree-based models for recurrence-free survival in breast cancer.” *JCO Oncology Advances*, 2.
+
