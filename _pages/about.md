@@ -35,9 +35,4 @@ I would welcome the opportunity to discuss potential collaboration opportunities
 
 - **[2026]** Received the AWSM Jack Weintraub Educational Advancement Award, Feinstein Institutes for Medical Research.
 - **[2026]** Serving as Subaward PI on NIH NHLBI R01HL182015 (Cardiovascular Risk Prediction and Reduction in Men with Prostate Cancer).
-- **[2026]** Upcoming contributed talk at the 33rd International Biometric Conference (IBC), Seoul, South Korea (07/2026).
-- **[2026]** Upcoming contributed session chair at Joint Statistical Meetings (JSM) (08/2026).
-- **[2025]** Received the AWSM Career Development Award in Memory of Roman Nosikovsky, Feinstein Institutes for Medical Research.
-- **[2025]** New paper published: “Leveraging two-phase data for improved prediction of survival outcomes with application to nasopharyngeal cancer.” *Biometrics*, 81(2).
-- **[2025]** New paper published: “Risk stratification using tree-based models for recurrence-free survival in breast cancer.” *JCO Oncology Advances*, 2.
 
