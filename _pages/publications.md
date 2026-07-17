@@ -13,7 +13,8 @@ redirect_from:
 
 ### Peer-Reviewed Journal Articles
 
-* Liu, A. W., __Oh, E. J.,__ Gazzara, E. R., Coppa, G. F., DePeralta, D. K., Molmenti, C. L., Devoe, C. E., Hornstein, N. J., Grothey, A., Levy, A., Weiss, M. J., Chiuzan, C., and Gholami, S. (Under Review). Identifying treatment disparities in curative-intent liver procedure rates for metastatic colorectal cancer in a large regional healthcare system.
+<!--* Liu, A. W., __Oh, E. J.,__ Gazzara, E. R., Coppa, G. F., DePeralta, D. K., Molmenti, C. L., Devoe, C. E., Hornstein, N. J., Grothey, A., Levy, A., Weiss, M. J., Chiuzan, C., and Gholami, S. (Under Review). Identifying treatment disparities in curative-intent liver procedure rates for metastatic colorectal cancer in a large regional healthcare system.
+-->
 * Feng, D., Elshafei, A., Yi, B., Eng, V.,  Wang, M., __Oh, E. J.,__ and Eid, J.-F. (2026). Patterns of mechanical failure in the Coloplast Titan Touch inflatable penile prosthesis: a 12-year single-surgeon experience, _Journal of Sexual Medicine_, 23(7), qdag168.
 * __Oh, E. J.,__ and Qian, M. (2026). Reluctant transfer learning in penalized regressions for individualized treatment rules under effect heterogeneity, _Statistics in Medicine_, 45(15-17), e70671. [[link]](https://onlinelibrary.wiley.com/doi/10.1002/sim.70671) [[pdf]](https://pmc.ncbi.nlm.nih.gov/articles/PMC13349454/pdf/SIM-45-0.pdf) [[supp]](https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fsim.70671&file=sim70671-sup-0001-Supinfo.pdf.pdf) [[code]](https://github.com/oheunj/RTL)
 * Vrany, E. A., Chiuzan, C., __Oh, E. J.,__ Ephraim, P. L., Austin, R. A., Brissette, I. F., Millstein, S. L., and Fitzpatrick, S. L. (2026). Geographic analysis of access to national diabetes prevention program in New York State, _Preventive Medicine Reports_, 103500.
