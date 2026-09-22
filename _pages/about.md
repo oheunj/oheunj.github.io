@@ -21,7 +21,7 @@ Regarding collaborative efforts, I have worked with researchers across various f
 
 
 ## About
-I received a BA and an MA in Statistics from [Yonsei University](https://www.yonsei.ac.kr/en_sc/index.do), and a PhD in Biostatistics from [Columbia University](https://www.columbia.edu/). My dissertation, co-advised by Drs. Min Qian and Ken Cheung, focused on statistical methods for optimal treatment regimes in personalized medicine and mobile health. After completing my PhD, I worked as a Postdoctoral Researcher at the [University of Pennsylvania](https://www.upenn.edu/) under the supervision of Dr. Jinbo Chen. Upon finishing my postdoc, I joined the [Northwell Health](https://www.northwell.edu/) as an Assistant Professor.
+I received a BA and an MA in Statistics from [Yonsei University](https://www.yonsei.ac.kr/en_sc/index.do), and a PhD in Biostatistics from [Columbia University](https://www.columbia.edu/). My dissertation, co-advised by Drs. Min Qian and Ken Cheung, focused on statistical methods for optimal treatment regimes in personalized medicine and mobile health. After completing my PhD, I worked as a Postdoctoral Researcher at the [University of Pennsylvania](https://www.upenn.edu/) under the supervision of Dr. Jinbo Chen. Upon finishing my postdoc, I joined [Northwell Health](https://www.northwell.edu/) as an Assistant Professor.
 
 
 <!--
