@@ -43,7 +43,7 @@ redirect_from:
   <ul>
     <li>
       <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-        <span>Introduction to SAS (BEST Diversity Program)</span>
+        <span>Introduction to SAS (BEST Program)</span>
         <span style="color:#666;">Summer 2019</span>
       </div>
     </li>
