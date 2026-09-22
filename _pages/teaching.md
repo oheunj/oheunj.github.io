@@ -43,18 +43,25 @@ redirect_from:
   <ul>
     <li>
       <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-        <span>Introduction to SAS (BEST Program)</span>
+        <span>Introduction to SAS</span>
         <span style="color:#666;">Summer 2019</span>
+      </div>
+      <div style="padding-left:12px;">
+        – Biostatistics Epidemiology Summer Training (BEST) Program
       </div>
     </li>
   </ul>
+
 
 - **Teaching Assistant**
   <ul>
     <li>
       <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-        <span>Machine Learning Boot Camp (SHARP Training Program)</span>
+        <span>Machine Learning Boot Camp</span>
         <span style="color:#666;">Summer 2020</span>
+      </div>
+      <div style="padding-left:12px;">
+        – Skills for Health and Research Professionals (SHARP) Training
       </div>
     </li>
 
