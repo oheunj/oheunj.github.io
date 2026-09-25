@@ -60,7 +60,7 @@ redirect_from:
         <span>Machine Learning Boot Camp</span>
         <span style="color:#666;">Summer 2020</span>
       </div>
-      <div style="padding-left:12px;">
+      <div style="padding-left:12px; margin-top:4px;">
         – Skills for Health and Research Professionals (SHARP) Training
       </div>
     </li>
