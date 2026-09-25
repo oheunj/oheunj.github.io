@@ -16,7 +16,7 @@ redirect_from:
   Content-based grant mechanism recommendation using NIH ExPORTER FY2025 data, identifying relevant activity codes (R01, R21, K23, etc.) from research keywords and grant category via multiclass XGBoost with text-based features.  
   `R` · `xgboost` · `text2vec` · `Shiny`
 
-* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260925)  
+* **NYS BRFSS County-Level E-Cigarette Use Map** [[R Markdown]](https://oheunj.github.io/illustrations/04_BRFSS_ecigar_260926)  
   County-level public health data visualization with interactive maps, bubble maps, and ranking plots.  
   `R` · `sf` · `tigris` · `leaflet` · `ggplot2`
 
