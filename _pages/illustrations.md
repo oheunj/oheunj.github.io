@@ -12,6 +12,10 @@ redirect_from:
 
 ### Illustrations
 
+* **Google Scholar Profile Analysis** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/GoogleScholar/)  
+  Analyze a public Google Scholar profile by URL or ID, including publications, yearly citations, trends for the 10 most cited papers, and optional h-index prediction.  
+  `R` · `scholar` · `ggplot2` · `Shiny`
+    
 * **NIH Grant Activity Code Recommender** [[R Shiny]](https://no86d0-eun0jeong-oh.shinyapps.io/nih-grant-recommender)  
   Content-based grant mechanism recommendation using NIH ExPORTER FY2025 data, identifying relevant activity codes (R01, R21, K23, etc.) from research keywords and grant category via multiclass XGBoost with text-based features.  
   `R` · `xgboost` · `text2vec` · `Shiny`
